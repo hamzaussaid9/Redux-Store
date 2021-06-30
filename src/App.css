@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.header{
+    width: 100%;
+    padding: 10px 15px 0px 15px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head{
+    background-color: rgb(243, 240, 240);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head-h2{
+    color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.product-container .h-1{
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0px 10%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(243, 240, 240);
 }
-
-.App-link {
-  color: #61dafb;
+.s-product-container {
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 5px 5px 3px rgb(232, 232, 232);
+    height: auto;
+    border: 1px solid rgb(221, 221, 221);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.s-product-container img {
+    width: 60%;
+}
+.left-c{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid rgb(221, 221, 221);
+}
+.right-c{
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+}
+.right-c p{
+    padding: 10px 0px;
+    color: rgb(143, 137, 137);
+    font-size: medium;
+}
+@media (max-width: 700px) {
+    .s-product-container{
+        flex-flow: column;
+    }
+    .left-c,
+    .right-c {
+        width: 100%;
+        display: block;
+        border:none;
+    }
 }
